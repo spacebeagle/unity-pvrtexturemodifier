@@ -11,7 +11,7 @@ Imagination Technologies社のテクスチャツールPVRTexToolはこうした�
 様々な変換の例
 --------------
 このプロジェクトは2枚のイメージに対してそれぞれ5種類の異なった加工を行い表示するものです。  
-名前の末尾が
+名前の末尾が  
 1.Bleedのものは、GUIモードのテクスチャをalpha bleedingしてアルファ付き4bit PVRTC化したもの、  
 2.DefaultはGUIモードのテクスチャをそのまま、アルファ付き4bit PVRTC化したもの、  
 3.PMAはGUIモードのテクスチャをPremultiplied Alpha化し、アルファ付き4bit PVRTC化したものをPremultiplied Alpha用のシェーダーを使って表示したもの、  
