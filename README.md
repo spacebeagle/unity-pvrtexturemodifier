@@ -12,11 +12,11 @@ Imagination Technologies社のテクスチャツールPVRTexToolはこうした�
 --------------
 このプロジェクトは2枚のイメージに対してそれぞれ5種類の異なった加工を行い表示するものです。  
 名前の末尾が
-1.Bleedのものは、GUIモードのテクスチャをalpha bleedingしてアルファ付き4bit PVRTC化したもの、
-2.DefaultはGUIモードのテクスチャをそのまま、アルファ付き4bit PVRTC化したもの、
-3.PMAはGUIモードのテクスチャをPremultiplied Alpha化し、アルファ付き4bit PVRTC化したものをPremultiplied Alpha用のシェーダーを使って表示したもの、
-4.PVRToolは前述のPVRTexToolによってalpha bleeding処理しておいたGUIモードのテクスチャをそのまま、アルファ付き4bit PVRTC化したもの、
-5.TruecolorはGUIモードのテクスチャをそのまま、フルカラーテクスチャ化したもの、
+1.Bleedのものは、GUIモードのテクスチャをalpha bleedingしてアルファ付き4bit PVRTC化したもの、  
+2.DefaultはGUIモードのテクスチャをそのまま、アルファ付き4bit PVRTC化したもの、  
+3.PMAはGUIモードのテクスチャをPremultiplied Alpha化し、アルファ付き4bit PVRTC化したものをPremultiplied Alpha用のシェーダーを使って表示したもの、  
+4.PVRToolは前述のPVRTexToolによってalpha bleeding処理しておいたGUIモードのテクスチャをそのまま、アルファ付き4bit PVRTC化したもの、  
+5.TruecolorはGUIモードのテクスチャをそのまま、フルカラーテクスチャ化したもの、  
 
 となっています。  
 これらはAssetPostprocessorを使用して処理されていて、テクスチャのインポートモードがGUIでテクスチャファイル名の末尾が"Bleed.png"の場合alpha bleedingが、"PMA.png"の場合Premultiplied Alphaが処理されます。  
