@@ -79,7 +79,7 @@ class PVRTextureModifier : AssetPostprocessor
 			for (var y = 0; y < height; y++) {
 				for (var x = 0; x < width; x++) {
 					int position=y*width+x;
-					if (pixels [position].a <= 0.0666666f) {
+					if (pixels [position].a <= 0.125f) {
 						float a=pixels[position].a;
 						pixels[position]=new Color(0.5f,0.5f,0.5f,a);
 						int index=1;
@@ -95,7 +95,7 @@ class PVRTextureModifier : AssetPostprocessor
 								{
 									int pos=yp*width+xp;
 									float ad=pixels[pos].a;
-									if(ad>0.0666666f){
+									if(ad>0.125f){
 										r+=pixels[pos].r*ad;	
 										g+=pixels[pos].g*ad;	
 										b+=pixels[pos].b*ad;
